@@ -70,20 +70,24 @@
     </div>
 
     <script>
-        function addToCart(sachId) {
-            // Thêm sách vào giỏ hàng ở đây
-            $.get('@Url.Action("ThemGioHang", "GioHang")', { ms: sachId, url: window.location.href }, function () {
-                // Hiển thị thông báo
-                var message = document.getElementById("addToCartMessage");  
-                message.style.display = "block";
+    function addToCart(sachId) {
+        // Thêm sách vào giỏ hàng ở đây
+        $.get('@Url.Action("ThemGioHang", "GioHang")', { ms: sachId, url: window.location.href }, function () {
+            // Hiển thị thông báo
+            var message = document.getElementById("addToCartMessage");
+            message.style.display = "block";
 
-                // Tự động ẩn thông báo sau một khoảng thời gian (ví dụ: 1.8 giây)
-                setTimeout(function () {
-                    message.style.display = "none";
-                }, 1800);
-            });
-        }
+            // Tự động ẩn thông báo sau một khoảng thời gian (ví dụ: 1.8 giây)
+            setTimeout(function () {
+                message.style.display = "none";
+
+                // Tải lại trang sau khi ẩn thông báo
+                location.reload();
+            }, 1000);
+        });
+    }
     </script>
+
 </body>
 </html>
 

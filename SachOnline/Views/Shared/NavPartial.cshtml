@@ -92,9 +92,7 @@
             <li><a href="~/User/dangnhap"><i class="fa-solid fa-right-to-bracket"> </i> Login</a></li>
             <li><a href="~/User/dangky"><i class="fa-solid fa-user-plus"></i> Register</a></li>
             <li>
-                <a href="~/GioHang/GioHang">
-                    <i class="fa-solid fa-cart-plus"></i> Giỏ Hàng
-                </a>
+                @Html.Action("GioHangPartial","GioHang")
             </li>
         </ul>
     </nav>

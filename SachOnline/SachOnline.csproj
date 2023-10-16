@@ -232,7 +232,7 @@
     <Content Include="Views\GioHang\DatHang.cshtml" />
     <Content Include="Views\GioHang\XacNhanDonHang.cshtml" />
     <Content Include="Views\SachOnline\TimKiem.cshtml" />
-    <Content Include="Views\Shared\GioHangPartial.cshtml" />
+    <Content Include="Views\GioHang\GioHangPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
